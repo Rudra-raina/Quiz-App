@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".DisplayQuestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/questionDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#363a43"
+            android:text="Which country does the flag belong to ?"/>
+
+        <ImageView
+            android:id="@+id/imageDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_flag_of_argentina"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="15dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="0"
+                android:indeterminate="false"/>
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0/10"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-5dp"
+                android:textColor="#7a8089"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/op_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="America"
+            android:textColor="#7a8089"
+            android:textSize="18dp"
+            android:padding="20dp"
+            android:background="@drawable/default_option_view"
+            />
+
+        <TextView
+            android:id="@+id/op_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Argentina"
+            android:textColor="#7a8089"
+            android:textSize="18dp"
+            android:padding="20dp"
+            android:background="@drawable/default_option_view"
+            />
+
+        <TextView
+            android:id="@+id/op_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Australia"
+            android:textColor="#7a8089"
+            android:textSize="18dp"
+            android:padding="20dp"
+            android:background="@drawable/default_option_view"
+            />
+
+        <TextView
+            android:id="@+id/op_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Armenia"
+            android:textColor="#7a8089"
+            android:textSize="18dp"
+            android:padding="20dp"
+            android:background="@drawable/default_option_view"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:background="@drawable/default_option_view"/>
+    </LinearLayout>
+
+</ScrollView>
